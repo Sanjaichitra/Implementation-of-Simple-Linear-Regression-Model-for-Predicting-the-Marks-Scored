@@ -2,19 +2,26 @@
 
 ## AIM:
 To write a program to predict the marks scored by a student using the simple linear regression model.
+
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-#### 1.Import the standard Libraries. 
-#### 2.Set variables for assigning dataset values. 
-#### 3.Import linear regression from sklearn. 
-#### 4.Assign the points for representing in the graph. 
-#### 5.Predict the regression for marks by using the representation of the graph. 
-#### 6.Compare the graphs and hence we obtained the linear regression for the given datas.
+```
+1.Import the standard Libraries.
+2.Set variables for assigning dataset values.
+3.Import linear regression from sklearn.
+4.Assign the points for representing in the graph.
+5.Predict the regression for marks by using the representation of the graph.
+6.Compare the graphs and hence we obtained the linear regression for the given datas.
+```
 ## Program:
-### Sanjai S
+```
+Program to implement the simple linear regression model for predicting the marks scored.
+Developed by: RAJESH A
+RegisterNumber: 212222100042 
+```
 ```py
 import pandas as pd
 import numpy as np
@@ -38,6 +45,8 @@ regressor.fit(x_train,y_train)
 y_pred = regressor.predict(x_test)
 print(y_pred)
 print(y_test)
+```
+```py
 #Graph plot for training data
 plt.scatter(x_train,y_train,color='black')
 plt.plot(x_train,regressor.predict(x_train),color='blue')
@@ -59,22 +68,23 @@ print('MAE = ',mae)
 rmse=np.sqrt(mse)
 print("RMSE= ",rmse)
 ```
+
 ## Output:
-### Dataset
-![output](./images/dataset.png)
-### Head Values
-![output](./images/head.png)
-### Tail Values
-![output](./images/tail.png)
-### X and Y values
-![output](./images/xyvalues.png)
-### Predication values of X and Y
-![output](./images/predict%20.png)
-### MSE,MAE and RMSE
-![output](./images/values.png)
-### Training Set
-![output](./images/train.png)
-### Testing Set
-![output](./images/test.png)
+## Datasets:
+![aiml exp2 1](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/9ce613a7-871c-42a8-9eff-b83ace99b155)
+## Headvalues:
+![aiml exp2 2](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/345b1045-a2b4-4b4e-9945-0986a18926ce)
+## Tailvalues:
+![aiml exp2 3](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/a60a945b-5202-4793-88fe-e38b4961d0fc)
+## X and Y values:
+![aiml exp2 4](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/c2f170e9-eb13-4751-adc2-6902066cdeda)
+## Prediction values of X and Y:
+![aiml exp2 5](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/f6272467-aacc-4dd5-956c-0ddea06fcf37)
+## MSE,MAE and RMSE:
+![aiml exp2 6](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/78032443-3a6f-45f5-9683-a324d7f7d44d)
+## Training Sets:
+![aiml exp 2 6](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/d73d872e-db20-4fbe-a396-c8bcdea2b373)
+## Training Sets:
+![aiml exp2 7](https://github.com/Rajeshanbu/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118924713/179d98ab-8a49-4b48-9b4d-6e7e2b2ede7a)
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
